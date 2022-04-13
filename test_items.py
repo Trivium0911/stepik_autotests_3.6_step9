@@ -8,5 +8,4 @@ def test_basket_button_exist(browser):
     browser.implicitly_wait(10)
     browser.get(link)
     time.sleep(10)
-    btn = browser.find_element(By.CSS_SELECTOR, ".product_page #add_to_basket_form .btn-add-to-basket")
-    assert btn is not None, "Basket not found."
+    assert browser.find_element(By.CSS_SELECTOR, "button[class~='btn-add-to-basket']"), "Basket not found."

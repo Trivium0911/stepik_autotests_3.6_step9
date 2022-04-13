@@ -4,7 +4,7 @@ import time
 link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
 
-def test_basket_button_present(browser):
+def test_basket_button_exist(browser):
     browser.implicitly_wait(10)
     browser.get(link)
     time.sleep(10)

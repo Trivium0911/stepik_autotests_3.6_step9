@@ -10,4 +10,3 @@ def test_basket_button_present(browser):
     btn = browser.find_element(By.CSS_SELECTOR, "#content_inner > article > div.row > div.col-sm-6.product_main > button")
     time.sleep(10)
     assert btn is not None, "Basket not found."
-
